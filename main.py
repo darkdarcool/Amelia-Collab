@@ -1,3 +1,4 @@
+
 import os,random
 import time, sys
 def typewriter(message):
@@ -45,4 +46,7 @@ if a == "eList":
   print(red + 'eClear')
   print(green +'Cleans the console memory and everything currenty on it.')
   print()
-  print(red + '')
+  print(red + 'eTime')
+  print(green + 'Will make the computer wait a select amount of time')
+	
+
