@@ -1,4 +1,3 @@
-
 import os,random
 import time, sys
 def typewriter(message):
@@ -26,8 +25,8 @@ bblue = "\033[0;94m"
 bmagenta = "\033[0;95m"
 bcyan = "\033[0;96m"
 bwhite = "\033[0;97m"
-
-typewriter('What is your name?')
+os.system('clear')
+typewriter('What is your name?\n')
 name = input('       >>>  ')
 
 ### Prep done, type work now!!!
@@ -40,6 +39,10 @@ os.system('clear')
 print('Ask me anything!\n')
 a = input(green + '')
 if a == "eList":
-	typewriter('Here are the commands!')
-	print(red + 'eClear')
-	print(green +'Cleans the console memory and everything currenty on it.')
+  os.system('clear')
+  typewriter('Here are the commands!\n')
+  os.system('clear')
+  print(red + 'eClear')
+  print(green +'Cleans the console memory and everything currenty on it.')
+  print()
+  print(red + '')
