@@ -59,8 +59,17 @@ def Elist():
     print(red + 'ePython')
     print(green + 'Will teach you the basics of python!')
     print()
-  print(red+ 'ePrint')
-  print(green + 'Will print any text that you input')
+    print(red+ 'ePrint')
+    print(green + 'Will print any text that you input')
+    print()
+    print(red + 'eGame')
+    print(green + 'Will let you play a short game')
+    print()
+    print(purple'eL')
+    print(green + 'Leave any command')
+    print(magenta + 'Would you like to leave or demo exacute a command?')
+    a = input('')
+
   
 
 
