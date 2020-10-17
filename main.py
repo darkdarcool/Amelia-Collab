@@ -1,5 +1,3 @@
-
-
 import os,random
 import time, sys
 def typewriter(message):
@@ -31,7 +29,7 @@ os.system('clear')
 typewriter('What is your name?\n')
 name = input('       >>>  ')
 
-### Prep done, type work now!!!
+#####Prep done, type work now!!!
 os.system('clear')
 typewriter(green + 'Hi! I\'m zoom bot! I\'m an alogrithm designed for your specific needs!! I think that your name is ' + bwhite + name + green +  '! Now, I know I\'m having a good day, but are you??')
 time.sleep(2)
@@ -40,9 +38,12 @@ typewriter('Let\'s talk commands. I am currently in Beta, so I\'m still learning
 typewriter('That is enough of that, let\'s get started!')
 time.sleep(2)
 os.system('clear')
-print('Ask me anything!\n')
-a = input(green + '')
-def Elist():
+
+def aa():
+  print('Ask me anything!\n')
+  print()
+  a = input(bcyan + '')
+
   if a == "eList":
     os.system('clear')
     typewriter('Here are the commands!\n')
@@ -65,9 +66,9 @@ def Elist():
     print(red + 'eGame')
     print(green + 'Will let you play a short game')
     print()
-    print(purple'eL')
+    print(magenta + 'eL')
     print(green + 'Leave any command')
-    print(magenta + 'Would you like to leave or demo exacute a command?')
+    print(red + 'Would you like to leave or demo exacute a command?')
     a = input('')
 
   
@@ -76,10 +77,57 @@ def Elist():
 
 
   if a == "eClear":
-    os.system('clear') 
-    del a, black, red, green, yellow, blue, magenta, cyan, white, bblack
+   os.system('clear')
+   aa()
+  elif a == "eL":
+    os.system('clear')
+    aa()
+  elif a == "eTime":
+    typewriter('What amount of time are we exacuting?\n ONLY USE NUMBERS\n')
+    tim = input('Time = ')
+    print('IMA IGNORE THAT AND DO 3 SECONDS')
+    time.sleep(3)
+    os.system('clear')
+    aa()
+  elif a == "eTypewriter":
+    typewriter('Want to to type like me! This is the page for you! Just type now what you want said!')
+    print()
+    timm = input('>>> ')
+    time.sleep(1)
+    typewriter(timm)
+    time.sleep(2)
+    os.system('clear')
+    aa()
+  elif a == "ePrint":
+    typewriter('What text would you like to be exacuted?')
+    print()
+    timmm = input('>>>>>')
+    time.sleep(1)
+    print(timmm)
+    time.sleep(2)
+    os.system('clear')
+    aa()
+  elif a == "ePython":
+    os.system('clear')
+    typewriter('Here are your choices for classes\n')
+    print('a) Beginner')
+    classe = input('')
+    if classe == "a":
+       os.system('clear')
+       typewriter('Welcome beginners! Here are a few classes that are availible! ')
+       print(red + 'print function')
+       print()
+       print('Variables')
+       print()
+       print('In print functions')
+       print()
+       print('')
+  else:
+    typewriter('Command not found')
+    time.sleep(2)
+    os.system('clear')
+    aa()
+###dfdfeifjifhdsjhfdsjkfhdsjhfdshfgsfgdhfgdshfdsfhgsd
 
-  
 
-	
-
+aa()
