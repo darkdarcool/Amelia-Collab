@@ -48,6 +48,13 @@ if a == "eList":
   print()
   print(red + 'eTime')
   print(green + 'Will make the computer wait a select amount of time')
-  print('')
+  print()
+  print(red + 'eTypewriter')
+  print(green + 'Will make the typewriter effect happen to any of the text you input')
+  print()
+  print(red + 'ePython')
+  print('Will teach you the basics of python!')
+  
+
 	
 
