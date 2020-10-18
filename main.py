@@ -108,20 +108,7 @@ def aa():
     os.system('clear')
     aa()
   elif a == "ePython":
-    os.system('clear')
-    typewriter('Here are your choices for classes\n')
-    print('a) Beginner')
-    classe = input('')
-    if classe == "a":
-       os.system('clear')
-       typewriter('Welcome beginners! Here are a few classes that are availible! ')
-       print(red + 'print function')
-       print()
-       print('Variables')
-       print()
-       print('In print functions')
-       print()
-       print('')
+    python()
   else:
     typewriter('Command not found')
     time.sleep(2)
@@ -131,6 +118,4 @@ def aa():
 
 
 aa()
-<h1>
-	dfff
-</h1>
+
