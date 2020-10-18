@@ -70,12 +70,6 @@ def aa():
     print(green + 'Leave any command')
     print(red + 'Would you like to leave or demo exacute a command?')
     a = input('')
-
-  
-
-
-
-
   if a == "eClear":
    os.system('clear')
    aa()
