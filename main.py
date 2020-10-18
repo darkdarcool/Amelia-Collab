@@ -66,8 +66,10 @@ def aa():
     print(red + 'eGame')
     print(green + 'Will let you play a short game')
     print()
-    print(magenta + 'eL')
+    print(red + 'eL')
+    
     print(green + 'Leave any command')
+    print()
     print(red + 'Would you like to leave or demo exacute a command?')
     a = input('')
   if a == "eClear":
