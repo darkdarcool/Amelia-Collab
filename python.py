@@ -32,8 +32,8 @@ def python():
  classe = input('')
  if classe == "a":
     os.system('clear')
-    typewriter('Welcome beginners! Here are a few classes that are availible!\n ')
-    print(red + 'a) print function')
+    typewriter('Welcome beginners! Here are a few classes that are availible!\n' + red)
+    print('a) print function')
     print()
     print('b) Variables')
     print()
@@ -45,7 +45,7 @@ def python():
     py = py.lower()
     if py == "a":
       os.system('clear')
-      typewriter(green + 'Hi! This is me! Zoom bot! Miss me! Well, I\'m going to assume, that you have no idea how to to anything with python!\nIt is one of the easiest languages to learn! It also capable of so much! From typing hello world, to creating discord bots and Nuraeul Networks! ')
+      typewriter(green + 'Hi! This is me! Zoom bot! Miss me? Well, I\'m going to assume, that you have no idea how to to anything with python!\nIt is one of the easiest languages to learn! It also capable of so much! From typing hello world, to creating discord bots and Nuraeul Networks! ')
       time.sleep(2)
       os.system('clear')
       typewriter('So, why don\'t we get started!')
@@ -54,8 +54,19 @@ def python():
       typewriter('The print function, the most basic thing to know about python, it\'s like the printf in c++/c, and the console.log in Java. So, here is how to do this.')
       time.sleep(2)
       os.system('clear')
-      typewriter('print:\nprint('Hello world!)\n')
-      typewriter('You can clearly see the print typed out, but there are parenthesies after to show what your are typing. The there are quots. You can use anykind of quot you want for the print function. Whatever you type in the quots will be printed out!')
+      typewriter('print(\'Hello world!\')\n')
+      typewriter('You can clearly see the print typed out, but there are parenthesies after to show what your are typing. The there are quots. You can use anykind of quot you want for the print function. Whatever you type in the quots will be printed out!\n')
+      time.sleep(2)
+      typewriter('Now I think it is only fair that you try!' + red + '\nONLY USE SINGLE QUOTS' + green + ' Type\nprint(\'Hello World\')')
+      q1 = input(cyan + '\n').lower()
+      q1 = q1.lower()
+      if q1 == 'print(\'hello world\')' and 'print("hello world")':
+        typewriter(green + 'Great!')
+      else:
+        print(green + 'HMMMMM, I think you typed something wrong.  I think you may need a little help.  ')
+        time.sleep(5)
+        os.system('clear')
+        os.system('python3 help.py')
       
 	    
     elif classe == "b":
