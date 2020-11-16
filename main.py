@@ -104,7 +104,7 @@ def aa():
     os.system('clear')
     aa()
   elif a == "ePython":
-    python()
+    os.system('python3 python.py')
   else:
     typewriter('Command not found')
     time.sleep(2)
