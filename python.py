@@ -1,4 +1,5 @@
 import os, random, time, sys 
+score = 0
 def typewriter(message):
 	for i in message:
 		sys.stdout.write(i)
@@ -7,7 +8,9 @@ def typewriter(message):
 			time.sleep(0.08)
 		else:
 			time.sleep(0.2)
-			
+
+  
+
 black = "\033[0;30m"
 red = "\033[0;31m"
 green = "\033[0;32m"
@@ -26,6 +29,7 @@ bcyan = "\033[0;96m"
 bwhite = "\033[0;97m"
 def python():
  os.system('clear')
+ print('Score = ' + str(score))
  typewriter('Here are your choices for classes\n')
  print('a) Beginner')
  print('b) Intermedate')
@@ -62,16 +66,31 @@ def python():
       q1 = q1.lower()
       if q1 == 'print(\'hello world\')' and 'print("hello world")':
         typewriter(green + 'Great!')
+        typewriter('Looks like you go the right answer.')
+        time.sleep(2)
+        os.system('clear')
+        typewriter('You completed the lesson!!\nCongrats! Now you get a badge for your efforts!')
+        score + 1
+        time.sleep(2)
+        os.system('clear')
+        python()
       else:
         print(green + 'HMMMMM, I think you typed something wrong.  I think you may need a little help.  ')
         time.sleep(5)
         os.system('clear')
         os.system('python3 help.py')
+    elif py == "b":
+      typewriter(green + 'Looks like you wanna learn variables huh? Well I, Zoom bot will gladly teach you ')
+      time.sleep(2)
+      os.system('clear')
+      typewriter('')
+
       
 	    
-    elif classe == "b":
-       typewriter('Hello fellow coders!')
-       print(red + 'Imports')
+ elif classe == "b":
+    typewriter('Hello fellow coders!')
+    print()
+    print(red + 'Imports')
 
 python()
   
