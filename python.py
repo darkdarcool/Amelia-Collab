@@ -61,11 +61,11 @@ def python():
       typewriter('print(\'Hello world!\')\n')
       typewriter('You can clearly see the print typed out, but there are parenthesies after to show what your are typing. The there are quots. You can use anykind of quot you want for the print function. Whatever you type in the quots will be printed out!\n')
       time.sleep(2)
-      typewriter('Now I think it is only fair that you try!' + red + '\nONLY USE SINGLE QUOTS' + green + ' Type\nprint(\'Hello World\')')
+      typewriter('Now I think it is only fair that you try!' + red + '\nONLY USE SINGLE QUOTS\n' + green + 'Type\nprint(\'Hello World\')')
       q1 = input(cyan + '\n').lower()
       q1 = q1.lower()
       if q1 == 'print(\'hello world\')' and 'print("hello world")':
-        typewriter(green + 'Great!')
+        typewriter(green + 'Great!\n')
         typewriter('Looks like you go the right answer.')
         time.sleep(2)
         os.system('clear')
